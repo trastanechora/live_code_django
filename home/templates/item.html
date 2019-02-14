@@ -1,0 +1,23 @@
+{% extends 'template.html' %}
+{% load static %}
+
+{% block head %}
+    <title>{{ content.product_name }}</title>
+{% endblock %}
+
+{% block content %}
+    <div class="row col-md-4 content-item detail">
+        <div class="col-12 item-separator">
+            <div class="col-12">
+                <img src="{{ content.photo.url }}" class="col-12 display-photo">
+            </div>
+            <div class="col-12">
+                <h2>{{ content.product_name }}</h2>
+                <p>Rp. {{ content.price }}</p>
+                <!-- <a href="#">Lihat Detail</a> -->
+                <p>{{ content.description }}</p>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

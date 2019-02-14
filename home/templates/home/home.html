@@ -1,0 +1,29 @@
+{% extends 'template.html' %}
+{% load static %}
+
+{% block head %}
+    <title>Toko Online</title>
+{% endblock %}
+
+{% block content %}
+
+{% for product in products %}
+<div class="row col-md-4 content-item">
+    <div class="col-12 item-separator">
+        <div class="col-12">
+            <img src="{{ product.photo.url }}" class="col-12 display-photo">
+        </div>
+        <div class="col-12">
+            <h2>{{ product.product_name }}</h2>
+            <p>Rp. {{ product.price }}</p>
+            <!-- <a href="#">Lihat Detail</a> -->
+            <a href="{% url 'item_description' requested_id=product.id%}">Lihat Detail</a>
+        </div>
+    </div>
+</div>
+{% endfor %}
+<div>
+    <p><a href="{% url 'new_item' %}">Add more product here!</a></p>
+</div>
+
+{% endblock %}

@@ -1,0 +1,80 @@
+header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: white !important;
+    z-index: 100;
+}
+
+.navbar-brand {
+    color: white;
+}
+
+nav {
+    background-color: rgb(140, 177, 255) !important;
+    width: 100%;
+}
+
+li a {
+    text-decoration: none;
+    color: white;
+}
+
+ul.nav.navbar-nav {
+    flex-direction: row;
+}
+
+ul.nav.navbar-nav li {
+    margin-right: 5%;
+}
+
+.wrapper {
+    /* background-color: black; */
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.content-wrapper {
+    background-color: white;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px;
+}
+
+.col-12 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.content-item {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    box-sizing: border-box;
+}
+
+.content-wrapper img {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+
+.item-separator {
+    border: 1px solid #EBEBEB;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.display-photo {
+    padding: 0;
+}
+
+.detail {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.for-form {
+    margin-top: 100px;
+}

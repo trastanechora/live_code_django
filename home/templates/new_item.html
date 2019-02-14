@@ -1,0 +1,22 @@
+{% extends 'template.html' %}
+{% load static %}
+
+{% block head %}
+    <title>Input new item - Toko online</title>
+{% endblock %}
+
+{% block content %}
+
+
+<div class="for-form">
+    <h2>New Item</h2>
+    <form method="POST" enctype="multipart/form-data" class="post-form">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="save btn btn-default">Add</button>
+    </form>
+
+    <p><a href="{% url 'home' %}">Return to home</a></p>
+</div>
+
+{% endblock %}
