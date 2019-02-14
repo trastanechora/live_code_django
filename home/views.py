@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from .models import Product
 from .forms import PostForm
+from django.shortcuts import redirect
 
 # Create your views here.
 def home(request):
